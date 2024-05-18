@@ -1,0 +1,13 @@
+.video-section {
+    margin-bottom: 20px;
+  }
+  
+  .video-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .video-list {
+    display: flex;
+    overflow-x: auto;
+  }
+  
