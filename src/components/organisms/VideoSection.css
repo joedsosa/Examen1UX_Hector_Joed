@@ -1,12 +1,18 @@
 .video-section {
-  margin: 20px;
+  margin-bottom: 40px;
+  background-color: #181818;
 }
 
-.video-section h3 {
-  margin-bottom: 10px;
-  color: #ffffff; /* Letras blancas */
+.section-title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .video-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
