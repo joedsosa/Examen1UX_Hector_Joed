@@ -1,7 +1,7 @@
 /* VideoSection.css */
 .video-section {
   margin-bottom: 20px;
-  background-color: #181818;
+  background-color: #0f0f0f;
 }
 .section-title {
   margin-bottom: 20px;
@@ -17,7 +17,8 @@
   justify-content: space-between;
 }
 
-.video-card:last-child {
-  margin-right: 0; /* No hay margen derecho para el último video */
+/* Video Sections Styling */
+.video-sections {
+  padding: 10px;
 }
 

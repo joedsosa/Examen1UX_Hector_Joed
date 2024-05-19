@@ -1,25 +1,15 @@
-/* App.css */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #181818; /* Fondo oscuro */
-  color: #ffffff; /* Texto claro */
-  font-family: Arial, sans-serif; /* Establece la fuente de texto */
-}
-
+/* General App Styling */
 .app {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Usa min-height en lugar de height para que el fondo oscuro se extienda al hacer scroll */
+  height: 100%;
+  background-color: #0f0f0f; /* Dark background */
+  color: white; /* Light text */
 }
 
+/* Main Content Styling */
 .main-content {
   display: flex;
+  flex-direction: column;
   flex: 1;
-}
-
-.video-sections {
-  flex: 1;
-  padding: 20px;
   overflow-y: auto;
 }

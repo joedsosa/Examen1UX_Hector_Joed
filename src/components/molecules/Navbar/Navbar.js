@@ -1,20 +1,18 @@
 import React from 'react';
 import './Navbar.css';
 
-
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
   return (
     <nav className="navbar">
-      <div className="sidebar-toggle">&#9776;</div>
-      
-      <div className="search-container">
-        <input type="text" className="search-input" placeholder="Buscar" />
-        <button className="search-button">&#128269;</button>
-        <button className="voice-button">&#128266;</button>
+      <div className="navbar-search-container">
+        <input type="text" className="navbar-search" placeholder="Buscar" />
+        <button className="navbar-search-button">🔍</button>
+        <button className="navbar-voice-search">🎤</button>
       </div>
-      <div className="action-buttons">
-        <button className="create-button">&#43;</button>
-        <button className="profile-button">&#128100;</button>
+      <div className="navbar-right">
+        <button className="navbar-icon">➕</button>
+        <button className="navbar-icon">🔔</button>
+        <button className="navbar-icon">👤</button>
       </div>
     </nav>
   );

@@ -1,11 +1,16 @@
 import React from 'react';
 import './Sidebar.css';
+import yutub from 'C:/Users/Hector/Documents/UNITEC - EDUARDO/Clases/2024/Clases Q2 - Abril a Junio 2024/Experiencia de Usuario/Examen1UX_Hector_Joed/src/assets/yutub.png';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
+      <div className="sidebar-logo">
+        <img src={yutub} alt="YouTube Logo" />
+        </div>
       {/* Sección 1: Principal, Shorts, Suscripciones */}
       <div className="sidebar-section">
+      <div className="sidebar-toggle">&#9776;</div>
         <div className="section-title">Principal</div>
         <button className="sidebar-button">🏠 Principal</button>
         <button className="sidebar-button">📹 Shorts</button>

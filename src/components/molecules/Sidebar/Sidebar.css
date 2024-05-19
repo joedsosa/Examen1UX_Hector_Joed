@@ -1,9 +1,10 @@
 /* Sidebar.css */
 .sidebar {
   width: 130px;
-  background-color: #303030;
-  color: #ffffff;
+  background-color: #0f0f0f;
+  color: #ffffffc0;
   padding: 20px;
+  margin-right: 20px;
 }
 
 .sidebar-section {
@@ -27,6 +28,20 @@
 }
 
 .divider {
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #929292;
   margin: 20px 0;
+}
+.sidebar-logo{
+    height: 2px;
+    width: 1px;
+    size-adjust: 2px;
+    margin: 15px;
+    margin-top: 0px;
+
+}
+.sidebar-toggle{
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  align-content: center;
 }

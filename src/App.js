@@ -59,10 +59,10 @@ const App = () => {
 
   return (
     <div className="app">
+      <Sidebar />
+      <div className="main-content">
       <Navbar />
       <QuickRecommendationsBar />
-      <div className="main-content">
-        <Sidebar />
         <div className="video-sections">
           <VideoSection title="Continuar viendo" videos={videosContinuarViendo} />
           <VideoSection title="Recomendados" videos={videosRecomendados} />
