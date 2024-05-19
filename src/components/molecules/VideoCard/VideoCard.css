@@ -1,7 +1,7 @@
 /* VideoCard.css */
 .video-card {
   width: 300px; /* Ancho deseado de la tarjeta */
-  margin-right: 5px; /* Espacio entre tarjetas */
+  margin-right: 3px; /* Espacio entre tarjetas */
   position: relative;
   flex-direction: column;
   cursor: pointer;
@@ -9,14 +9,27 @@
 
 .video-thumbnail {
   width: 300px; /* Ajustar la imagen al ancho de la tarjeta */
-  height: 250px; /* Fija la altura deseada */
+  height: 225px; /* Fija la altura deseada */
   object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsionarse */
-  border-radius: 8px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.duration-overlay {
+  position: absolute;
+  margin-top: -25px; /* Ajuste para el espacio desde el borde inferior */
+  right: 10px; /* Ajuste para el espacio desde el borde derecho */
+  background-color: rgba(10, 10, 10, 0.952); /* Fondo oscuro con opacidad */
+  color: #ffffff; /* Texto blanco */
+  padding: 2px 5px; /* Espaciado interno */
+  border-radius: 3px; /* Bordes redondeados */
+  font-size: 12px; /* Tamaño del texto */
+  font-weight: bold;
 }
 
 .video-info {
   display: flex;
-  padding: 10px 0;
+  padding: 2px 0;
 }
 
 .channel-avatar-container {
@@ -24,6 +37,7 @@
   height: 40px; /* Altura del contenedor de la imagen del canal */
   overflow: hidden; /* Ocultar partes de la imagen que excedan las dimensiones */
   border-radius: 100%; /* Hacer el contenedor de la imagen del canal circular */
+  margin: 8px;
 }
 
 .channel-avatar {
@@ -36,11 +50,11 @@
 }
 
 .video-title {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .channel-name {
-  font-size: 14px;
+  font-size: 16px;
   color: #666;
 }
 
@@ -50,18 +64,21 @@
 }
 
 .views,
-.upload-time,
-.video-duration {
-  font-size: 12px;
+.upload-time {
+  font-size: 14px;
   color: #666;
   margin-right: 10px;
 }
-
+.video-duration{
+  font-size: 14px;
+  color: #666;
+  position:sticky;
+}
 .progress-bar {
-  position: relative;
+  position: static;
   bottom: 0;
   left: 0;
-  height: 3px;
+  height:4px;
   width: 100%;
-  background-color: red; /* Color de la barra de progreso */
+  background-color: rgb(255, 0, 0); /* Color de la barra de progreso */
 }

@@ -30,21 +30,21 @@ import canal_shorts from './assets/canal_shorts.jpeg';
 const App = () => {
   const videosContinuarViendo = [
     { image: luismi1, title: 'La Media Vuelta', time: 'Hace 3 años', channelName: 'Luis Miguel Exitos', channelImage: canalLuismi },
-    { image: luismi2, title: 'Sabes una cosa', time: 'Hace 2 años', channelName: 'Luis Miguel Exitos', channelImage: canalLuismi },
-    { image: luismi3, title: 'Cuando calienta el sol', time: 'Hace 4 años', channelName: 'Luis Miguel Exitos', channelImage: canalLuismi },
-    { image: luismi4, title: 'Sabor a mi', time: 'Hace 5 años', channelName: 'Luis Miguel Exitos', channelImage: canalLuismi },
+    { image: luismi2, title: 'Sabes una cosa', time: 'Hace 2 años', channelName: 'Exitos Luis Mi', channelImage: canalLuismi },
+    { image: luismi3, title: 'Cuando calienta el sol', time: 'Hace 4 años', channelName: 'Luis Miguel Fans', channelImage: canalLuismi },
+    { image: luismi4, title: 'Sabor a mi', time: 'Hace 5 años', channelName: 'Mis Boleros Favoritos', channelImage: canalLuismi },
   ];
 
   const videosRecomendados = [
     { image: eleven, title: 'Stranger Things', time: 'Hace 11 meses', channelName: 'Tu peli favorita', channelImage: canal_pelis },
-    { image: flash, title: 'The Flash', time: 'Hace 17 meses', channelName: 'Tu peli favorita', channelImage: canal_pelis },
+    { image: flash, title: 'The Flash', time: 'Hace 17 meses', channelName: 'DC Comics', channelImage: canal_pelis },
     { image: casapapel, title: 'La Casa de Papel', time: 'Hace 1 mes', channelName: 'Tu peli favorita', channelImage: canal_pelis },
-    { image: suits, title: 'Suits', time: 'Hace 6 meses', channelName: 'Tu peli favorita', channelImage: canal_pelis },
+    { image: suits, title: 'Suits', time: 'Hace 6 meses', channelName: 'Netflix', channelImage: canal_pelis },
   ];
 
   const videosMiMix = [
     { image: l200, title: 'Nueva Mitsubishi L200 2025', time: 'Hace 48 horas', channelName: 'Mitsubishi Motors', channelImage: canal_mix },
-    { image: inter, title: 'Interstellar Teaser Trailer', time: 'Hace 160 horas', channelName: 'Tu peli favortia', channelImage: canal_mix },
+    { image: inter, title: 'Interstellar Teaser Trailer', time: 'Hace 160 horas', channelName: 'Tu peli favorita', channelImage: canal_mix },
     { image: soda, title: 'De Musica Ligera - Soda Stereo', time: 'Hace 45 horas', channelName: 'Soda Stereo', channelImage: canal_mix },
     { image: hilux, title: 'Hilux 2025: La mejor?', time: 'Hace 37 horas', channelName: 'Toyota HN', channelImage: canal_mix },
   ];
