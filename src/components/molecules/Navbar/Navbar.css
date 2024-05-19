@@ -18,10 +18,10 @@
 }
 
 .navbar-search {
-  padding: 5px;
-  border: none;
-  border-radius: 2px;
-  width: 400px;
+  padding: 10px; /* Aumenta el padding para incrementar la altura */
+  border: 2px solid #ffffff; /* Borde blanco */
+  border-radius: 15px; /* Esquinas redondeadas */
+  width: 640px; /* Aumenta el ancho */
   background-color: #303030; /* Fondo del mismo color que la navbar */
   color: #b3b3b3; /* Texto gris */
 }
@@ -30,15 +30,12 @@
   color: #b3b3b3; /* Color del placeholder */
 }
 
-.navbar-voice-search {
-  margin-left: 10px;
-  background: none;
-  border: none;
-  color: #ffffff; /* Letras blancas */
-  cursor: pointer;
-}
-
 .navbar-icons span {
   margin-left: 20px;
   cursor: pointer;
+  border: 2px solid #ffffff; /* Delineado blanco */
+  padding: 5px;
+  border-radius: 50%; /* Esquinas redondeadas */
+  background-color: transparent; /* Fondo transparente */
+  color: #ffffff; /* Color de los iconos */
 }
