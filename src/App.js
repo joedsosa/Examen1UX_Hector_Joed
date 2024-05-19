@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from './components/molecules/Navbar/Navbar';
 import Sidebar from './components/molecules/Sidebar/Sidebar';
 import VideoSection from './components/organisms/VideoSection';
+import QuickRecommendationsBar from './components/molecules/QuickRecommendationsBar/QuickRecommendationsBar';
+
 import './App.css';
 
 import luismi1 from './assets/luismi1.avif';
@@ -22,6 +24,7 @@ const App = () => {
   return (
     <div className="app">
       <Navbar />
+      <QuickRecommendationsBar />
       <div className="main-content">
         <Sidebar />
         <div className="video-sections">
@@ -34,5 +37,6 @@ const App = () => {
     </div>
   );
 };
+
 
 export default App;

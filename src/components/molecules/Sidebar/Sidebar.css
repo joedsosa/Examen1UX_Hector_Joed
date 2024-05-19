@@ -1,9 +1,12 @@
+/* Sidebar.css */
 .sidebar {
-  width: 200px;
-  background-color: #202020; /* Fondo un poco más claro que el principal */
+  width: 150px;
+  background-color: #303030;
+  color: #ffffff;
   padding: 20px;
-  box-sizing: border-box;
+  margin-top: 40px; /* Ajusta el margen superior para dejar espacio para la barra de recomendaciones rápidas */
 }
+
 
 .sidebar ul {
   list-style-type: none;

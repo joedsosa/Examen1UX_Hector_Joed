@@ -1,0 +1,23 @@
+/* QuickRecommendationsBar.css */
+.quick-recommendations-container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .quick-recommendations-bar {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: #282828;
+    justify-content: flex-start;
+  }
+  
+  .quick-recommendation-button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #4d4d4d;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
