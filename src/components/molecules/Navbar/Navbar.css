@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #202020; /* Fondo un poco más claro que el principal */
+  color: #ffffff; /* Letras blancas */
+}
+
+.navbar-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-search-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search {
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  width: 400px;
+  background-color: #303030; /* Fondo del mismo color que la navbar */
+  color: #b3b3b3; /* Texto gris */
+}
+
+.navbar-search::placeholder {
+  color: #b3b3b3; /* Color del placeholder */
+}
+
+.navbar-voice-search {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: #ffffff; /* Letras blancas */
+  cursor: pointer;
+}
+
+.navbar-icons span {
+  margin-left: 20px;
+  cursor: pointer;
+}

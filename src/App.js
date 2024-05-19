@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
-import VideoSection from './components/VideoSection';
-import './styles/App.css';
+import Navbar from './components/molecules/Navbar/Navbar';
+import Sidebar from './components/molecules/Sidebar/Sidebar';
+import VideoSection from './components/organisms/VideoSection';
+import './App.css';
 
 const App = () => {
   const videos = [
