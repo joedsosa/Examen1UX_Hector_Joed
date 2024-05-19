@@ -1,0 +1,83 @@
+.video-card {
+  width: 300px;
+  margin-right: 3px;
+  position: relative;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.video-thumbnail {
+  width: 300px;
+  height: 225px;
+  object-fit: cover; 
+  border-radius: 20px;
+  position: relative;
+}
+
+.duration-overlay {
+  position: absolute;
+  margin-top: -25px;
+  right: 10px;
+  background-color: rgba(10, 10, 10, 0.952);
+  color: #ffffff;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.video-info {
+  display: flex;
+  padding: 2px 0;
+}
+
+.channel-avatar-container {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 8px;
+}
+
+.channel-avatar {
+  width: 100%;
+}
+
+.video-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title {
+  font-size: 18px;
+}
+
+.channel-name {
+  font-size: 16px;
+  color: #666;
+}
+
+.video-meta {
+  display: flex;
+  align-items: center;
+}
+
+.views,
+.upload-time {
+  font-size: 14px;
+  color: #666;
+  margin-right: 10px;
+}
+.video-duration{
+  font-size: 14px;
+  color: #666;
+  position:sticky;
+}
+.progress-bar {
+  position: static;
+  bottom: 0;
+  left: 0;
+  height:4px;
+  width: 100%;
+  background-color: rgb(255, 0, 0);
+}

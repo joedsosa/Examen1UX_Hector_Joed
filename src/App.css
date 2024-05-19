@@ -1,0 +1,32 @@
+.app {
+  display: flex;
+  height: 100%;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 100vh
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 200px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
