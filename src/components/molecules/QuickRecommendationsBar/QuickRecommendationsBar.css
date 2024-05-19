@@ -4,12 +4,15 @@
     z-index: 1;
   }
   
-  .quick-recommendations-bar {
-    display: flex;
-    overflow-x: auto;
-    padding: 10px;
+ /* QuickRecommendationsBar.css */
+.quick-recommendations-bar {
+    position: relative;
+    
+    left: 0;
+    width: 100%;
     background-color: #282828;
-    justify-content: flex-start;
+    padding: 10px;
+    z-index: 1000; /* Asegura que esté por debajo de la Navbar pero por encima del contenido */
   }
   
   .quick-recommendation-button {
