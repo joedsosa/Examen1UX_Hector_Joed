@@ -1,26 +1,27 @@
-/* QuickRecommendationsBar.css */
-.quick-recommendations-container {
-    position: relative;
-    z-index: 1;
-  }
+/* Estilos para la barra de recomendaciones */
+.quick-recommendation-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333; /* Fondo oscuro */
+  border-radius: 20px; /* Bordes redondeados */
   
- /* QuickRecommendationsBar.css */
-.quick-recommendations-bar {
-    position: relative;
-    
-    left: 0;
-    width: 100%;
-    background-color: #282828;
-    padding: 10px;
-    z-index: 1000; /* Asegura que esté por debajo de la Navbar pero por encima del contenido */
-  }
-  
-  .quick-recommendation-button {
-    margin-right: 10px;
-    padding: 5px 10px;
-    border: none;
-    background-color: #4d4d4d;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  
+}
+
+.quick-recommendation-button {
+  background-color: #555; /* Color de fondo oscuro para los botones */
+  color: #fff; /* Texto en color claro */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.quick-recommendation-button + .quick-recommendation-button {
+  margin-left: 10px; /* Espacio entre cada botón */
+}
+
+.quick-recommendation-button:hover {
+  background-color: #777; /* Cambio de color de fondo oscuro al pasar el cursor */
+}

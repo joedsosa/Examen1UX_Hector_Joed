@@ -17,7 +17,6 @@ const QuickRecommendationsBar = () => {
         <button className="quick-recommendation-button">Hiphop alternativo</button>
         <button className="quick-recommendation-button">Manga</button>
         <button className="quick-recommendation-button">Trailer</button>
-        {/* Agrega más botones según sea necesario */}
       </div>
     </div>
   );

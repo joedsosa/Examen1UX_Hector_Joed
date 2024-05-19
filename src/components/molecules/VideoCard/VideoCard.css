@@ -1,14 +1,15 @@
+/* VideoCard.css */
 .video-card {
-  display: flex;
+  width: 300px; /* Ancho deseado de la tarjeta */
+  margin-right: 5px; /* Espacio entre tarjetas */
+  position: relative;
   flex-direction: column;
-  width: 300px;
-  margin-bottom: 20px;
   cursor: pointer;
 }
 
 .video-thumbnail {
-  width: 100%;
-  height: 170px; /* Fija la altura deseada */
+  width: 300px; /* Ajustar la imagen al ancho de la tarjeta */
+  height: 250px; /* Fija la altura deseada */
   object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsionarse */
   border-radius: 8px;
 }
@@ -18,11 +19,15 @@
   padding: 10px 0;
 }
 
-.channel-image {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  margin-right: 10px;
+.channel-avatar-container {
+  width: 40px; /* Ancho del contenedor de la imagen del canal */
+  height: 40px; /* Altura del contenedor de la imagen del canal */
+  overflow: hidden; /* Ocultar partes de la imagen que excedan las dimensiones */
+  border-radius: 100%; /* Hacer el contenedor de la imagen del canal circular */
+}
+
+.channel-avatar {
+  width: 100%; /* Ajustar la imagen del canal al contenedor circular */
 }
 
 .video-details {
@@ -31,19 +36,32 @@
 }
 
 .video-title {
+  font-size: 16px;
+}
+
+.channel-name {
   font-size: 14px;
-  font-weight: bold;
-  margin: 0;
-  color: #030303;
+  color: #666;
 }
 
-.channel-name,
-.video-time {
+.video-meta {
+  display: flex;
+  align-items: center;
+}
+
+.views,
+.upload-time,
+.video-duration {
   font-size: 12px;
-  color: #606060;
-  margin: 0;
+  color: #666;
+  margin-right: 10px;
 }
 
-.video-title:hover {
-  color: #065fd4;
+.progress-bar {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: red; /* Color de la barra de progreso */
 }

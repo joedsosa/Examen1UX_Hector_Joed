@@ -1,8 +1,8 @@
+/* VideoSection.css */
 .video-section {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background-color: #181818;
 }
-
 .section-title {
   margin-bottom: 20px;
   font-size: 18px;
@@ -15,4 +15,8 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
+}
+
+.video-card:last-child {
+  margin-right: 0; /* No hay margen derecho para el último video */
 }
