@@ -1,10 +1,10 @@
-/* Sidebar.css */
 .sidebar {
   width: 130px;
   background-color: #0f0f0f;
   color: #ffffffc0;
-  padding: 20px;
-  margin-right: 20px;
+  padding: 10px;
+  margin: 15px;
+  transition: left 0.3s;
 }
 
 .sidebar-section {
@@ -25,7 +25,9 @@
   width: 100%;
   text-align: left;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
+
 
 .divider {
   border-top: 1px solid #929292;
@@ -44,4 +46,31 @@
   margin-bottom: 10px;
   margin-right: 10px;
   align-content: center;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar-button {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 160px;
+    position: absolute;
+    left: -160px; 
+    transition: left 0.3s;
+  }
+
+  .sidebar-button {
+    padding: 6px;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
 }

@@ -1,29 +1,28 @@
-/* VideoCard.css */
 .video-card {
-  width: 300px; /* Ancho deseado de la tarjeta */
-  margin-right: 3px; /* Espacio entre tarjetas */
+  width: 300px;
+  margin-right: 3px;
   position: relative;
   flex-direction: column;
   cursor: pointer;
 }
 
 .video-thumbnail {
-  width: 300px; /* Ajustar la imagen al ancho de la tarjeta */
-  height: 225px; /* Fija la altura deseada */
-  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsionarse */
+  width: 300px;
+  height: 225px;
+  object-fit: cover; 
   border-radius: 20px;
   position: relative;
 }
 
 .duration-overlay {
   position: absolute;
-  margin-top: -25px; /* Ajuste para el espacio desde el borde inferior */
-  right: 10px; /* Ajuste para el espacio desde el borde derecho */
-  background-color: rgba(10, 10, 10, 0.952); /* Fondo oscuro con opacidad */
-  color: #ffffff; /* Texto blanco */
-  padding: 2px 5px; /* Espaciado interno */
-  border-radius: 3px; /* Bordes redondeados */
-  font-size: 12px; /* Tamaño del texto */
+  margin-top: -25px;
+  right: 10px;
+  background-color: rgba(10, 10, 10, 0.952);
+  color: #ffffff;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -33,15 +32,15 @@
 }
 
 .channel-avatar-container {
-  width: 40px; /* Ancho del contenedor de la imagen del canal */
-  height: 40px; /* Altura del contenedor de la imagen del canal */
-  overflow: hidden; /* Ocultar partes de la imagen que excedan las dimensiones */
-  border-radius: 100%; /* Hacer el contenedor de la imagen del canal circular */
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 100%;
   margin: 8px;
 }
 
 .channel-avatar {
-  width: 100%; /* Ajustar la imagen del canal al contenedor circular */
+  width: 100%;
 }
 
 .video-details {
@@ -80,5 +79,5 @@
   left: 0;
   height:4px;
   width: 100%;
-  background-color: rgb(255, 0, 0); /* Color de la barra de progreso */
+  background-color: rgb(255, 0, 0);
 }

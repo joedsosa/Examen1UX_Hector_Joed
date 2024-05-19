@@ -2,9 +2,9 @@ import React from 'react';
 import './Sidebar.css';
 import yutub from 'C:/Users/Hector/Documents/UNITEC - EDUARDO/Clases/2024/Clases Q2 - Abril a Junio 2024/Experiencia de Usuario/Examen1UX_Hector_Joed/src/assets/yutub.png';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen }) => {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
       <div className="sidebar-logo">
         <img src={yutub} alt="YouTube Logo" />
         </div>

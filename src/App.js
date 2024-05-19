@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/molecules/Navbar/Navbar';
 import Sidebar from './components/molecules/Sidebar/Sidebar';
 import VideoSection from './components/organisms/VideoSection';
@@ -28,6 +28,11 @@ import algo_contigo from './assets/algo_contigo.jpeg';
 import canal_shorts from './assets/canal_shorts.jpeg';
 
 const App = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  }; 
   const videosContinuarViendo = [
     { image: luismi1, title: 'La Media Vuelta', time: 'Hace 3 años', channelName: 'Luis Miguel Exitos', channelImage: canalLuismi },
     { image: luismi2, title: 'Sabes una cosa', time: 'Hace 2 años', channelName: 'Exitos Luis Mi', channelImage: canalLuismi },
@@ -59,9 +64,9 @@ const App = () => {
 
   return (
     <div className="app">
-      <Sidebar />
+      <Sidebar isOpen={isSidebarOpen} />
       <div className="main-content">
-      <Navbar />
+      <Navbar onMenuClick={toggleSidebar} />
       <QuickRecommendationsBar />
         <div className="video-sections">
           <VideoSection title="Continuar viendo" videos={videosContinuarViendo} />
