@@ -1,6 +1,6 @@
 import React from 'react';
 import './Sidebar.css';
-import yutub from '../../../assets/yutub.png';  // Ajuste de la ruta relativa
+import yutub from '../../../assets/yutub.png';  
 
 const Sidebar = ({ isOpen }) => {
   return (
