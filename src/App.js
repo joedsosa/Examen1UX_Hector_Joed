@@ -3,6 +3,7 @@ import Navbar from './components/molecules/Navbar/Navbar';
 import Sidebar from './components/molecules/Sidebar/Sidebar';
 import VideoSection from './components/organisms/VideoSection';
 import QuickRecommendationsBar from './components/molecules/QuickRecommendationsBar/QuickRecommendationsBar';
+import VideoCard from './components/molecules/VideoCard/VideoCard';
 
 import './App.css';
 
@@ -27,10 +28,6 @@ import integrales from './assets/Integrales.jpg';
 import Matefacil from './assets/MateFacil.jpg';
 import hh from './assets/HipHop.jpg';
 
-
-
-
-
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -38,7 +35,7 @@ const App = () => {
     setIsSidebarOpen(!isSidebarOpen);
   }; 
   const videosContinuarViendo = [
-    { image: luismi1, title: 'La Media Vuelta', time: 'Hace 3 años', channelName: 'Luis Miguel Exitos', channelImage: canalLuismi, youtubeLink: 'https://www.youtube.com/watch?v=XzRiAerFjQE&pp=ygUPbGEgbWVkaWEgdnVlbHRh' },
+    { image: luismi1, title: 'La Media Vuelta', time: 'Hace 3 años', channelName: 'Luis Miguel Exos', channelImage: canalLuismi, youtubeLink: 'https://www.youtube.com/watch?v=XzRiAerFjQE&pp=ygUPbGEgbWVkaWEgdnVlbHRh' },
     { image: luismi2, title: 'Sabes una cosa', time: 'Hace 2 años', channelName: 'Exitos Luis Mi', channelImage: canalLuismi, youtubeLink: 'https://www.youtube.com/watch?v=UuGrc3vvdMw' },
     { image: luismi3, title: 'Cuando calienta el sol', time: 'Hace 4 años', channelName: 'Luis Miguel Fans', channelImage: canalLuismi, youtubeLink: 'https://www.youtube.com/watch?v=gTkJ-nP6pXY' },
     { image: luismi4, title: 'Sabor a mi', time: 'Hace 5 años', channelName: 'Mis Boleros Favoritos', channelImage: canalLuismi, youtubeLink: 'https://www.youtube.com/watch?v=cNo-d6Y6w8Y' },
@@ -59,10 +56,10 @@ const App = () => {
   ];
   
   const videosYouTubeShorts = [
-    { image: guitar, title: 'Tutorial Express de Guitarra', time: 'Hace 1 hora', channelName: 'Tus Clases de Guitarra', channelImage: canal_shorts, youtubeLink: 'URL_DEL_VIDEO' },
-    { image: intensa, title: 'Intensamente 2 Teaser Trailer', time: 'Hace 2 horas', channelName: 'Tu peli favorita', channelImage: canal_shorts, youtubeLink: 'URL_DEL_VIDEO' },
-    { image: volca, title: 'Por que la Hilux vuelca?', time: 'Hace 3 horas', channelName: 'Toyota HN', channelImage: canal_shorts, youtubeLink: 'URL_DEL_VIDEO' },
-    { image: algo_contigo, title: 'Escucha Algo Contigo en Spotify', time: 'Hace 4 horas', channelName: 'Rita Payes', channelImage: canal_shorts, youtubeLink: 'URL_DEL_VIDEO' },
+    { image: guitar, title: 'Tutorial Express de Guitarra', time: 'Hace 1 hora', channelName: 'Tus Clases de Guitarra', channelImage: canal_shorts, youtubeLink: 'URL_DEL_VIDEO',isShorts:true },
+    { image: intensa, title: 'Intensamente 2 Teaser Trailer', time: 'Hace 2 horas', channelName: 'Tu peli favorita', channelImage: canal_shorts, youtubeLink: 'URL_DEL_VIDEO',isShorts:true },
+    { image: volca, title: 'Por que la Hilux vuelca?', time: 'Hace 3 horas', channelName: 'Toyota HN', channelImage: canal_shorts, youtubeLink: 'URL_DEL_VIDEO',isShorts:true },
+    { image: algo_contigo, title: 'Escucha Algo Contigo en Spotify', time: 'Hace 4 horas', channelName: 'Rita Payes', channelImage: canal_shorts, youtubeLink: 'URL_DEL_VIDEO',isShorts:true },
   ];
   
 
@@ -71,8 +68,8 @@ const App = () => {
     <div className="app">
       <Sidebar isOpen={isSidebarOpen} />
       <div className="main-content">
-      <Navbar onMenuClick={toggleSidebar} />
-      <QuickRecommendationsBar />
+        <Navbar onMenuClick={toggleSidebar} />
+        <QuickRecommendationsBar />
         <div className="video-sections">
           <VideoSection title="Continuar viendo" videos={videosContinuarViendo} />
           <VideoSection title="Recomendados" videos={videosRecomendados} />

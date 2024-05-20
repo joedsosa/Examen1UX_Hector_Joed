@@ -1,13 +1,13 @@
 import React from 'react';
 import './VideoCard.css';
 
-const VideoCard = ({ video }) => {
+const VideoCard = ({ video, isShorts }) => {
   return (
     <a href={video.youtubeLink} target="_blank" rel="noopener noreferrer" className="video-link">
-      <div className="video-card">
-        <img src={video.image} alt={video.title} className="video-thumbnail" />
-        <div className="duration-overlay">{video.duration}2:35</div>
-        <div className="progress-bar"></div>
+      <div className={`video-card ${isShorts ? 'youtube-shorts' : ''}`}>
+        <img src={video.image} alt={video.title} className={`video-thumbnail ${isShorts ? 'youtube-shorts-image' : ''}`} />
+        {!isShorts && <div className="duration-overlay">{video.duration}2:35</div>}
+        {!isShorts && <div className="progress-bar"></div>}
         <div className="video-info">
           <div className="channel-avatar-container">
             <img src={video.channelImage} alt={video.channelName} className="channel-avatar" />

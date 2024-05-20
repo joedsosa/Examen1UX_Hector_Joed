@@ -68,11 +68,8 @@
   color: #666;
   margin-right: 10px;
 }
-.video-duration{
-  font-size: 14px;
-  color: #666;
-  position:sticky;
-}
+
+
 .progress-bar {
   position: static;
   bottom: 0;
@@ -81,3 +78,4 @@
   width: 100%;
   background-color: rgb(255, 0, 0);
 }
+
