@@ -1,10 +1,10 @@
 import React from 'react';
-import './VideoSection.css'; // Asegúrate de importar el archivo CSS necesario
+import './VideoSection.css'; 
 import VideoCard from '../molecules/VideoCard/VideoCard';
 
 const VideoSection = ({ title, videos }) => {
   return (
-    <div className="video-section">
+    <div className={`video-section ${title === "YouTube Shorts" ? 'youtube-shorts-section' : ''}`}>
       <h2 className="section-title">{title}</h2>
       <div className="video-list">
         {videos.map((video, index) => (

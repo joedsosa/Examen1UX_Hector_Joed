@@ -1,10 +1,33 @@
+/* Sidebar.css */
+
 .sidebar {
-  width: 130px;
+  width: 135px;
   background-color: #0f0f0f;
   color: #ffffffc0;
   padding: 10px;
   margin: 15px;
   transition: left 0.3s;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column; /* Apila verticalmente los elementos */
+  align-items: flex-start; /* Alinea los elementos a la izquierda */
+  padding-bottom: 10px;
+}
+
+.youtube-logo {
+  margin: -7px;
+  margin-left: 10px;
+  width: 160px; 
+  margin-bottom: 10px; /* Espacio entre el logo y el icono del menú */
+}
+
+.sidebar-toggle {
+  margin-top: -50px;
+margin-right: 2cm;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .sidebar-section {
@@ -28,25 +51,11 @@
   transition: background-color 0.2s;
 }
 
-
 .divider {
   border-top: 1px solid #929292;
   margin: 20px 0;
 }
-.sidebar-logo{
-    height: 2px;
-    width: 1px;
-    size-adjust: 2px;
-    margin: 15px;
-    margin-top: 0px;
 
-}
-.sidebar-toggle{
-  font-size: 24px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  align-content: center;
-}
 /* Media Queries */
 @media (max-width: 768px) {
   .sidebar {
@@ -62,7 +71,7 @@
   .sidebar {
     width: 160px;
     position: absolute;
-    left: -160px; 
+    left: -160px;
     transition: left 0.3s;
   }
 

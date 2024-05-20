@@ -5,12 +5,12 @@ import yutub from '../../../assets/yutub.png';  // Ajuste de la ruta relativa
 const Sidebar = ({ isOpen }) => {
   return (
     <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-      <div className="sidebar-logo">
-        <img src={yutub} alt="YouTube Logo" />
-        </div>
+      <div className="sidebar-header">
+        <img src={yutub} alt="YouTube Logo" className="youtube-logo" />
+        <div className="sidebar-toggle">&#9776;</div>
+      </div>
       {/* Sección 1: Principal, Shorts, Suscripciones */}
       <div className="sidebar-section">
-      <div className="sidebar-toggle">&#9776;</div>
         <div className="section-title">Principal</div>
         <button className="sidebar-button">🏠 Principal</button>
         <button className="sidebar-button">📹 Shorts</button>
@@ -74,7 +74,6 @@ const Sidebar = ({ isOpen }) => {
         <button className="sidebar-button">ℹ️ Información    Prensa
         Derechos de autor   Contactar   Creadores   Publicidad    Desarrolladores   Términos    Privacidad    Política y seguridad    Cómo funciona YouTube   Probar funciones nuevas       
             © 2024 Google LLC</button>
-        
       </div>
     </div>
   );

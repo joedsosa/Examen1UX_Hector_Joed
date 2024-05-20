@@ -19,14 +19,15 @@ import suits from './assets/suits.webp';
 import canal_pelis from './assets/canal_pelis.png';
 import maluma from './assets/Maluma.jpg';
 import canal_mix from './assets/canal_mix.jpeg';
-import guitar from './assets/guitar.jpg';
-import intensa from './assets/intensa.webp';
-import volca from './assets/volca.jpeg';
-import algo_contigo from './assets/algo_contigo.jpeg';
+import shorts2 from './assets/shorts2.webp';
+import shorts3 from './assets/shorts3.webp';
+import shorts4 from './assets/shorts4.webp';
 import canal_shorts from './assets/canal_shorts.jpeg';
 import integrales from './assets/Integrales.jpg';
 import Matefacil from './assets/MateFacil.jpg';
 import hh from './assets/HipHop.jpg';
+import shorts1 from './assets/shorts.webp';
+
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -56,10 +57,10 @@ const App = () => {
   ];
   
   const videosYouTubeShorts = [
-    { image: guitar, title: 'Tutorial Express de Guitarra', time: 'Hace 1 hora', channelName: 'Tus Clases de Guitarra', channelImage: canal_shorts, youtubeLink: 'URL_DEL_VIDEO',isShorts:true },
-    { image: intensa, title: 'Intensamente 2 Teaser Trailer', time: 'Hace 2 horas', channelName: 'Tu peli favorita', channelImage: canal_shorts, youtubeLink: 'URL_DEL_VIDEO',isShorts:true },
-    { image: volca, title: 'Por que la Hilux vuelca?', time: 'Hace 3 horas', channelName: 'Toyota HN', channelImage: canal_shorts, youtubeLink: 'URL_DEL_VIDEO',isShorts:true },
-    { image: algo_contigo, title: 'Escucha Algo Contigo en Spotify', time: 'Hace 4 horas', channelName: 'Rita Payes', channelImage: canal_shorts, youtubeLink: 'URL_DEL_VIDEO',isShorts:true },
+    { image: shorts1, title: '¡Datos perturbadores que no conocías! 😟🤡', channelName: 'emmanuelcondobleeme', channelImage: canal_shorts, youtubeLink: 'https://www.youtube.com/shorts/JD_OmIQ3wCE?feature=share',isShorts:true },
+    { image: shorts2, title: 'Batalla de Magia vs @juliusdein', channelName: 'Palomares Magic', channelImage: canal_shorts, youtubeLink: 'https://www.youtube.com/shorts/Dv4YFbAjZxI',isShorts:true },
+    { image: shorts3, title: 'IF MY MOM WAS PRESIDENT!', channelName: 'shooteo2313', channelImage: canal_shorts, youtubeLink: 'https://www.youtube.com/shorts/hdfISXbccDo',isShorts:true },
+    { image: shorts4, title: 'When a Spider gets inside your Minecraft house ', channelName: 'Michazike', channelImage: canal_shorts, youtubeLink: 'https://www.youtube.com/shorts/CtkbksrylwY',isShorts:true },
   ];
   
 
